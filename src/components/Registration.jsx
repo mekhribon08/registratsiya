@@ -28,6 +28,10 @@ export default function Registration() {
     }
   };
 
+  const handleShow = () => {
+    setPassword(!password);
+  };
+
   return (
     <div className="card  bg-white">
       <h2>Password Validation</h2>
@@ -36,11 +40,14 @@ export default function Registration() {
           Password
         </label>
         <input
-          type="password"
+          type={password ? "password" : "text"}
           className="form-control"
           onChange={handleChange}
           value={password}
         />
+        <p className="hide-show" onClick={handleShow}>
+          {password ? "show" : "hide"}
+        </p>
         <p className="err">{message}</p>
         <button className="btn btn-success w-100">Check</button>
       </form>

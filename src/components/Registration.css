@@ -14,8 +14,22 @@ body {
 .card {
   padding: 50px 50px;
   border-radius: 8px;
+  max-width: 500px;
 }
 
 .err {
   color: red;
+}
+
+.hide-show {
+  cursor: pointer;
+  /* position: absolute; */
+  margin-left: 280px;
+  margin-top: -30px;
+  color: gray;
+  font-size: 14px;
+}
+
+.form-control {
+  min-width: 350px;
 }
