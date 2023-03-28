@@ -17,6 +17,12 @@ body {
   max-width: 500px;
 }
 
+@media (max-width: 500px) {
+  .card {
+    max-width: 250px;
+  }
+}
+
 .err {
   color: red;
 }
@@ -30,6 +36,19 @@ body {
   font-size: 14px;
 }
 
+@media (max-width: 500px) {
+  .hide-show {
+    margin-left: 100px;
+    margin-top: -30px;
+  }
+}
+
 .form-control {
   min-width: 350px;
+}
+
+@media (max-width: 500px) {
+  .form-control {
+    min-width: 150px;
+  }
 }
